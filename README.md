@@ -1,22 +1,28 @@
-<h1>Termocity - Busca de informações climáticas por cidade/h1/>
-Este projeto é uma aplicação web que permite que o usuário obtenha informações sobre o clima de qualquer cidade do Brasil. Através de uma interface simples e intuitiva, o usuário pode pesquisar a cidade de interesse e obter informações como temperatura, condições climáticas e localização.
+<h1>Termocity - Busca de informações climáticas por cidade</h1>
+Este projeto é uma aplicação web que permite que o usuário obtenha informações sobre o clima de qualquer cidade do Brasil. Através de uma interface simples e intuitiva, o usuário pode pesquisar a cidade de interesse e obter informações como temperatura, condições climáticas e localização.<br>
 
-Tecnologias
-HTML
-CSS
-JavaScript
-Bootstrap
-API de clima OpenWeatherMap
-Funcionamento
+<h3>Tecnologias</h3>
+
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* API de clima OpenWeatherMap
+
+<h3>Funcionamento</h3>
 A aplicação possui um formulário onde o usuário seleciona o estado e a cidade desejada. Ao enviar o formulário, a aplicação faz uma requisição à API OpenWeatherMap e retorna as informações climáticas da cidade pesquisada.
 
 A aplicação também possui recursos adicionais, como previsão do tempo, umidade do ar, velocidade do vento e outras informações úteis para quem deseja se manter informado sobre as condições climáticas da cidade.
 
-Como usar
+<h3>Como usar</h3>
 Clone este repositório:
-sh
-Copy code
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
+```
+git clone https://github.com/seu-usuario/nome-do-repositorio.git 
+
+```
+
+
 Abra o arquivo index.html no seu navegador.
 
 Selecione o estado e a cidade de interesse e clique no botão "Obter Temperatura".
