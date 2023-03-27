@@ -21,6 +21,12 @@ Acesse o link:
 git clone https://github.com/marcelitos1v9/Termocity.git
 
 ```
+ou clone o repositório
+
+```
+git clone https://github.com/marcelitos1v9/Termocity.git
+
+```
 
 
 Abra o arquivo index.html no seu navegador.
