@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -63,11 +63,15 @@
                     <button type="submit" class="btn btn-outline-light">Obter Temperatura</button>
                 </form>
             </div>
-            <div class="col-md-6 mt-3">
-                <h2>Informações de Tempo</h2>
+            <div class="col-md-6  mt-3">
+                <h2>Informações de climáticas</h2>
+                <div class="mt-2">
+                <p>Localização: <span id="location"></span></p>
                 <p>Temperatura: <span id="temp"></span></p>
                 <p>Condições climáticas: <span id="conditions"></span></p>
-                <p>Localização: <span id="location"></span></p>
+                <p>Umidade do ar: <span id="humidity"></span></p>
+                <p>Velocidade do vento: <span id="wind"></span></p>
+                </div>
             </div>
         </div>
     </div>
@@ -146,24 +150,32 @@
                 })
                 .catch(error => console.error(error));
         }
+
+
         const form = document.querySelector('form');
+        const cityInput = document.querySelector('#city-input');
+        const tempDisplay = document.querySelector('#temp');
+        const conditionsDisplay = document.querySelector('#conditions');
+        const locationDisplay = document.querySelector('#location');
+        const humidityDisplay = document.querySelector('#humidity');
+        const windDisplay = document.querySelector('#wind');
+
         form.addEventListener('submit', (event) => {
             event.preventDefault();
-            const cityInput = document.querySelector('#city-input');
             const city = cityInput.value;
-            const url = `${apiUrl}${city}&appid=${apiKey}&units=metric&lang=pt_br`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pt_br`;
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    const temp = data.main.temp;
-                    const conditions = data.weather[0].description;
-                    const location = data.name;
-                    document.querySelector('#temp').textContent = temp + '°C';
-                    document.querySelector('#conditions').textContent = conditions;
-                    document.querySelector('#location').textContent = location;
+                    tempDisplay.textContent = `${data.main.temp} °C`;
+                    conditionsDisplay.textContent = data.weather[0].description;
+                    locationDisplay.textContent = data.name;
+                    humidityDisplay.textContent = `${data.main.humidity} %`;
+                    windDisplay.textContent = `${data.wind.speed} m/s`;
                 })
                 .catch(error => console.error(error));
         });
+
     </script>
 </body>
 
