@@ -15,7 +15,7 @@ A aplicação possui um formulário onde o usuário seleciona o estado e a cidad
 A aplicação também possui recursos adicionais, como previsão do tempo, umidade do ar, velocidade do vento e outras informações úteis para quem deseja se manter informado sobre as condições climáticas da cidade.
 
 <h3>Como usar</h3>
-Clone este repositório:
+Acesse o link:
 
 ```
 git clone https://github.com/marcelitos1v9/Termocity.git
