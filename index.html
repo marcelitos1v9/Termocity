@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Termocity</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid p-5 bg-purple">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Termocity</h1>
+                <p class="lead">Digite o nome da cidade para obter informações de tempo</p>
+                
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <select class="form-control" id="estado" onchange="getCidades()">
+                            <option value="">Selecione um estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    
+                    <form>
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <select class="form-control" id="city-input">
+                            <option value="">Selecione um estado primeiro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-outline-light">Obter Temperatura</button>
+                </form>
+            </div>
+            <div class="col-md-6 m-auto">
+                <h2>Informações de Tempo</h2>
+                <p>Temperatura: <span id="temp"></span></p>
+                <p>Condições climáticas: <span id="conditions"></span></p>
+                <p>Localização: <span id="location"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Como funciona?</h2>
+                <p>Insira o nome da cidade no campo de busca e clique no botão "Obter Temperatura". Em seguida, a temperatura atual
+                    da cidade será exibida.</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Recursos adicionais</h2>
+                <p>O site oferece informações adicionais, como previsão do tempo, umidade do ar, velocidade do vento e
+                    outras informações úteis para quem deseja se manter informado sobre as condições climáticas da
+                    cidade.</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Sobre nós</h2>
+                <p>Sou um desenvolvedor apaixonado por clima e tecnologia, e nossa missão é fornecer informações
+                    precisas e atualizadas sobre as condições climáticas das cidades do Brasil e do mundo.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-light p-3">
+        <div class="container">
+            <div class="text-center">
+                <ul class="list-inline social-icons">
+                    <li class="list-inline-item">
+                        <a href="https://github.com/marcelitos1v9" target="_blank">
+                            <i class="fa-brands fa-github fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/marceloaugusto_oo/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="mailto:marceloaugustocge@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <p>&copy; Marcelo Augusto 2023 Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/logica/main.js"></script>
+</body>
+
+</html>
