@@ -18,7 +18,7 @@ A aplicação também possui recursos adicionais, como previsão do tempo, umida
 Clone este repositório:
 
 ```
-git clone https://github.com/seu-usuario/nome-do-repositorio.git 
+git clone https://github.com/marcelitos1v9/Termocity.git
 
 ```
 
