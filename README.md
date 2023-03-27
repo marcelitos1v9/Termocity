@@ -18,7 +18,7 @@ A aplicação também possui recursos adicionais, como previsão do tempo, umida
 Acesse o link:
 
 ```
-git clone https://github.com/marcelitos1v9/Termocity.git
+https://marcelitos1v9.github.io/Termocity/
 
 ```
 ou clone o repositório
@@ -33,8 +33,9 @@ Abra o arquivo index.html no seu navegador.
 
 Selecione o estado e a cidade de interesse e clique no botão "Obter Temperatura".
 
-Sobre o desenvolvedor
+<h3>Sobre o desenvolvedor</h3>
 Este projeto foi desenvolvido por um programador apaixonado por clima e tecnologia. A missão deste projeto é fornecer informações precisas e atualizadas sobre as condições climáticas das cidades do Brasil e do mundo.
 
-Licença
+<h3>Licença</h3>
+
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
